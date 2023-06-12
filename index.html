@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Peanut's Portfolio</title>
+  </head>
+  <body>
+    <aside id="sidebar" class="sidebar">
+      <button class="close-sidebar" onclick="closeSidebar()">
+        <i class="fa-solid fa-xmark fa-beat"></i>
+      </button>
+      <ul class="sidebar-links">
+        <li>
+          <a class="sidebar-link" href="#">Home</a>
+        </li>
+        <li>
+          <a class="sidebar-link" href="#">About</a>
+        </li>
+        <li>
+          <a class="sidebar-link" href="#">Project</a>
+        </li>
+        <li>
+          <a class="sidebar-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <img src="./images/logoPeanut.png" alt="" class="sidebar-logo" />
+    </aside>
+    <nav>
+      <div class="nav-container">
+        <div class="header-center">
+          <a href="index.html">
+            <img src="./images/logoPeanut.png" alt="" class="nav-logo"
+          /></a>
+          <button class="nav-btn" onclick="openSidebar()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul class="nav-links">
+            <li class="nav-link">
+              <a href="#">Home</a>
+            </li>
+            <li class="nav-link">
+              <a href="#">About</a>
+            </li>
+            <li class="nav-link">
+              <a href="#">Project</a>
+            </li>
+            <li class="nav-link">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
