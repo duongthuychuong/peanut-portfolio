@@ -6,3 +6,7 @@ const closeSidebar = () => {
   const sidebar = document.getElementById("sidebar");
   sidebar.classList.remove("sidebar-show");
 };
+setTimeout(() => {
+  const introDiv = document.getElementById("intro");
+  introDiv.style.display = "none";
+}, 9000);

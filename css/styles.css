@@ -85,7 +85,7 @@ ul {
 a {
   text-decoration: none;
 }
-img:not(.nav-logo, .sidebar-logo) {
+img:not(.nav-logo, .sidebar-logo, .intro-logo) {
   width: 100%;
   display: block;
 }
@@ -171,42 +171,10 @@ p {
     width: 95vw;
   }
 }
-/* welcome page */
-.welcome-page {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: slideIn 2s 0s ease-out forwards, exit 1s 1s;
-  background: var(--clr-primary-10);
-}
-
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0%);
-  }
-}
-@keyframes exit {
-  0% {
-    z-index: 10;
-  }
-  100% {
-    z-index: -5;
-  }
-}
-
-/* end of welcome page */
 /* navbar */
 .nav-container {
+  margin: 0 auto;
+  padding: 2rem;
   background: var(--clr-secondary-10);
   box-shadow: var(--light-shadow);
   height: 7vh;
@@ -218,9 +186,14 @@ p {
   padding: 0 1.5rem;
   max-width: 1170px;
 }
+.header-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+}
 .nav-logo {
   width: 20vw;
-  z-index: 100;
   max-width: 8rem;
 }
 .nav-btn {
@@ -308,22 +281,44 @@ p {
   color: var(--clr-primary-2);
 }
 /* sidebar end */
-/* hero */
-.hero-background {
-  /* width: 100vw;
-  height: 90vh;
-  background-color : (
-    linear-gradient(
-      to bottom,
-      rgba(245, 246, 252, 0.52),
-      rgba(117, 19, 93, 0.73)
-    ),
-    url("./images/35F861F5-5680-4DF0-811E-3845CC55D65B_1_105_c.jpeg")
-  ); */
+.intro {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: calc(100vh - 7vh);
-  background-size: cover;
-  color: white;
-  padding: 20px;
+  height: 100%;
+  background-color: var(--clr-primary-10);
+  z-index: 9999;
+  color: var(--clr-secondary-1);
+  font-size: 5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  animation: backgroundOut 2s 3s forwards;
 }
-/* hero end */
+.intro-title {
+  opacity: 0;
+  animation: fadeIn 4s 0.5s forwards ease-in;
+}
+@keyframes fadeIn {
+  0% {
+    transform: translate(-10%, -10%);
+  }
+  50% {
+    transform: translateX(0%, 0%);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes backgroundOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
