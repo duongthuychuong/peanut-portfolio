@@ -9,4 +9,4 @@ const closeSidebar = () => {
 setTimeout(() => {
   const introDiv = document.getElementById("intro");
   introDiv.style.display = "none";
-}, 9000);
+}, 5500);
