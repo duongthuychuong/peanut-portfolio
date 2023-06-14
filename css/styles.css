@@ -351,8 +351,13 @@ p {
 /* about me section */
 .about-me-container {
   padding-top: 6rem;
+}
+.about-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(247, 229, 205, 0.4);
 }
 .portrait-img {
 }
