@@ -2,7 +2,7 @@ window.onload = function () {
   const navbar = document.getElementById("nav-container-id");
   const allNavbarLinks = document.querySelectorAll(".nav-link");
   window.onscroll = () => {
-    if (window.scrollY > 200) {
+    if (window.scrollY > 100) {
       allNavbarLinks.forEach((link) => {
         link.classList.add("nav-link-scroll");
       });
