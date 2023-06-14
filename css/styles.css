@@ -162,9 +162,18 @@ p {
   color: var(--clr-primary-1);
   background: var(--clr-primary-7);
 }
+.title-center {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 /* section */
 .section {
   padding: 5rem 0;
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
 }
 
 @media screen and (min-width: 992px) {
@@ -178,10 +187,16 @@ p {
   margin: 0 auto;
   padding: 0.5rem;
   width: 100vw;
+  height: 5rem;
   background: transparent;
   transition: var(--transition);
 }
 .nav-active {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
   background: var(--clr-primary-11);
   box-shadow: var(--dark-shadow);
 }
@@ -193,7 +208,8 @@ p {
   max-width: var(--max-width);
 }
 .nav-logo {
-  width: 25%;
+  width: 25vw;
+  height: 4rem;
   display: inline-block;
 }
 .nav-btn {
@@ -342,7 +358,6 @@ p {
 /* intro end  */
 /* hero-section */
 .hero-background {
-  height: 100vh;
   background: linear-gradient(
       to bottom,
       rgba(36, 38, 39, 0.7),
@@ -380,6 +395,9 @@ p {
 .about-center {
   background: rgba(253, 245, 234, 0.7);
 }
+.image-about-me {
+  align-self: center;
+}
 
 @media screen and (min-width: 928px) {
   .about-content {
@@ -395,3 +413,6 @@ p {
   }
 }
 /* end of about me section */
+.projects-section {
+  text-align: center;
+}
