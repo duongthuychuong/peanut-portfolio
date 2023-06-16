@@ -413,6 +413,14 @@ p {
   }
 }
 /* end of about me section */
+/* project section  */
 .projects-section {
   text-align: center;
 }
+.footer-project {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  justify-items: center;
+  align-content: center;
+}
+/* end of project section  */
