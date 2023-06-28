@@ -275,7 +275,7 @@ p {
   transform: translateX(-100%);
   position: fixed;
   background: var(--clr-primary-7);
-  z-index: 4;
+  z-index: 90;
   min-height: 100vh;
   min-width: 100vw;
   transition: var(--transition);
@@ -283,7 +283,7 @@ p {
   justify-content: flex-start;
   padding: 2rem;
   padding-top: 2.5rem;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   flex-direction: column;
   flex: 1;
@@ -698,12 +698,14 @@ p {
 /* footer */
 .footer {
   background-color: var(--clr-primary-1);
-  height: 10vh;
   color: var(--clr-white);
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+.footer-center {
+  padding: 0.5rem;
 }
 .footer-center p {
   font-size: 1.25rem;
@@ -712,7 +714,7 @@ p {
 }
 .icon-footer-container {
   font-size: 1.5rem;
-  padding: 1rem;
+  margin-bottom: 0.5rem;
 }
 .icon-footer-container i {
   margin-right: 1.5rem;
