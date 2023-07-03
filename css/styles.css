@@ -272,7 +272,7 @@ p {
 
 /* sidebar */
 .sidebar {
-  transform: translateX(-100%);
+  transform: translateX(-110%);
   position: fixed;
   background: var(--clr-primary-7);
   z-index: 90;
